@@ -6,22 +6,19 @@
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
+	int c;
+	int d;
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (c = 0; c <= 8; c++)
 	{
-		for (ones = '0'; tens <= '9'; ones++)
+		for (d = c + 1; d <= 9; d++)
 		{
-			if (!((ones == tens) || (tens > ones)))
+			putchar(c + '0');
+			putchar(d + '0');
+			if (c < 8 || d < 9)
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
