@@ -1,18 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main-a program that prints all combinations of two digits
  * Return: 0 when successful
  */
 int main(void)
 {
-	int ones ='0';
+	int ones = '0';
 	int tens = '0';
 
 	for (tens = '0'; tens <= '9'; tens++)
 	{
 		for (ones = '0'; tens <= '9'; ones++)
 		{
-			if (!((ones == tens) ||  (tens > ones)))
+			if (!((ones == tens) || (tens > ones)))
 			{
 				putchar(tens);
 				putchar(ones);
