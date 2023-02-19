@@ -1,1 +1,1 @@
-program that prints all possible different combinations of two digits
+ program that prints all single digit numbers of base 10 starting from 0
